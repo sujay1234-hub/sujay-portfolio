@@ -1,0 +1,51 @@
+.techstack {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+.ts-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 22vw, 26rem);
+  letter-spacing: -0.04em;
+  color: rgba(240,236,228,0.025);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+.ts-header {
+  position: absolute;
+  top: 48px;
+  left: clamp(28px, 9vw, 140px);
+  right: clamp(28px, 9vw, 140px);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ts-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white-dim);
+}
+.ts-sub {
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(240,236,228,0.2);
+}
+.ts-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
